@@ -30,11 +30,11 @@ jobs:
       - run: npm run build
 
       - name: Create release archive
-        run: tar -cvzf ts-package-template.tar.gz package.json dist LICENSE README.md
+        run: tar -cvzf utils.tar.gz package.json dist LICENSE README.md
 
       - name: Create checksum.txt
         run: |
-          SUM=`sha256sum ts-package-template.tar.gz`
+          SUM=`sha256sum utils.tar.gz`
           echo $SUM > checksum.txt
 
       - name: Create release
@@ -43,7 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: |
-            ts-package-template.tar.gz
+            utils.tar.gz
             checksum.txt
 
   npm-release:

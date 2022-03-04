@@ -1,10 +1,10 @@
-# ts-project-template
+# @oadpoaw/utils
 
 ## Instructions
 
 ### Install the package
 ```sh
-npm install @oadpoaw/ts-package-template
+npm install @oadpoaw/utils
 ```
 
 ## License
