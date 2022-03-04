@@ -8,7 +8,7 @@ npm install @oadpoaw/utils
 ```
 
 ### Other Notes
-Required dependencies when using a module/function for the package and these are optional
+Required dependencies when using a module/function in the package and these are optional
 
 using `@oadpoaw/utils/web`
 - react
