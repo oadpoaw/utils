@@ -1,8 +1,8 @@
 /**
  * Differentiate two arrays.
- * @param array_1 
- * @param array_2 
- * @returns 
+ * @param array_1
+ * @param array_2
+ * @returns
  */
 export function differentiate<T>(array_1: T[], array_2: T[]): T[] {
 	if (!Array.isArray(array_1))

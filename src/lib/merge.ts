@@ -2,10 +2,10 @@ import { isPlainObject } from 'is-plain-object';
 
 /**
  * Merge two plain objects.
- * @param target 
- * @param source 
- * @param options 
- * @returns 
+ * @param target
+ * @param source
+ * @param options
+ * @returns
  */
 export function merge(target: any, source: any, options = { clone: true }) {
 	const output = options.clone ? { ...target } : target;

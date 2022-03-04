@@ -1,8 +1,8 @@
 /**
  * Parses numbers to return a readable string.
- * @param n 
- * @param separator 
- * @returns 
+ * @param n
+ * @param separator
+ * @returns
  */
 export function HumanReadable(n: number, separator = ',') {
 	if (typeof n !== 'number')
