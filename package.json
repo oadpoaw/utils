@@ -14,8 +14,8 @@
 		"build": "tsc -b && rollup -c scripts/rollup.ts && gen-esm-wrapper dist/index.js dist/index.mjs",
 		"lint": "prettier --check \"src/**/*.{ts,tsx}\"",
 		"format": "prettier --write \"src/**/*.{ts,tsx}\"",
-		"v:patch": "npm version patch",
-		"v:minor": "npm version minor"
+		"v:patch": "npm version patch -m \"chore(release): %s\"",
+		"v:minor": "npm version minor -m \"chore(release): %s\""
 	},
 	"devDependencies": {
 		"@sapphire/ts-config": "^3.3.1",
