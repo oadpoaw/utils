@@ -6,12 +6,19 @@
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"exports": {
-		"import": "./dist/index.mjs",
-		"require": "./dist/index.js"
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js",
+			"react": {
+				"import": "./dist/web/index.mjs",
+				"require": "./dist/web/index.js"
+			}
+		}
 	},
 	"scripts": {
-		"prebuild": "rimraf dist tsconfig.tsbuildinfo",
-		"build": "tsc -b && rollup -c scripts/rollup.ts && gen-esm-wrapper dist/index.js dist/index.mjs",
+		"prebuild": "rimraf dist tsconfig.tsbuildinfo && tsc -b",
+		"build": "rollup -c scripts/rollupMain.ts && gen-esm-wrapper dist/index.js dist/index.mjs",
+		"postbuild": "rollup -c scripts/rollupWeb.ts && gen-esm-wrapper dist/web/index.js dist/web/index.mjs",
 		"lint": "prettier --check \"src/**/*.{ts,tsx}\"",
 		"format": "prettier --write \"src/**/*.{ts,tsx}\"",
 		"v:patch": "npm version patch -m \"chore(release): %s\"",
