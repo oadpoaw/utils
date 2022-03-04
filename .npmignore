@@ -1,0 +1,7 @@
+.github/
+.vscode/
+scripts/
+src/
+.gitignore
+tsconfig.json
+*.tsbuildinfo
