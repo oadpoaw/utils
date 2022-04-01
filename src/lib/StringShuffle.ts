@@ -1,4 +1,4 @@
-import { ArrayShuffle } from '..';
+import { ArrayShuffle } from './ArrayShuffle.js';
 
 /**
  * Shuffles the given string.

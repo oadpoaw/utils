@@ -1,18 +1,15 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": "@sapphire/ts-config",
+	"extends": "@oadpoaw/ts-config",
 	"compilerOptions": {
-		"target": "ESNext",
-		"declaration": true,
 		"declarationMap": true,
 		"lib": [
+			"ESNext",
 			"DOM"
 		],
 		"rootDir": "src",
 		"outDir": "dist",
-		"emitDecoratorMetadata": true,
-		"jsx": "react",
-		"experimentalDecorators": true
+		"jsx": "react"
 	},
 	"include": [
 		"src"

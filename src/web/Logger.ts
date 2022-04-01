@@ -1,3 +1,7 @@
+if (typeof window === undefined) {
+	throw new Error('Logger.ts is only available in the browser.');
+}
+
 function parseOptions(type: string, message: any[]) {
 	if (type === 'warn' || type === 'error')
 		return [`[${type.toUpperCase()}]`, ...message];

@@ -16,5 +16,5 @@ export const Portal: React.FC<Props> = ({ children, selector }) => {
 		return () => setMounted(false);
 	}, [selector]);
 
-	return mounted ? createPortal(children, <Element>ref.current) : null;
+	return mounted && ref.current ? createPortal(children, ref.current) : null;
 };
