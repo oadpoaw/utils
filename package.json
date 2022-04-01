@@ -2,7 +2,7 @@
 	"$schema": "http://json.schemastore.org/package",
 	"name": "@oadpoaw/utils",
 	"description": "@oadpoaw/utils",
-	"version": "0.2.4",
+	"version": "0.3.0",
 	"type": "module",
 	"exports": {
 		".": "./dist/lib/**.js",
