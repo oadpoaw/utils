@@ -8,12 +8,34 @@
 	"types": "./dist/index.d.ts",
 	"exports": {
 		".": "./dist/index.js",
-		"./createLogger": "./dist/createLogger.js",
+		"./createLogger": "./dist/createLogger/index.js",
 		"./crypto": "./dist/crypto/index.js",
 		"./fs/sync": "./dist/fs/sync.js",
 		"./fs/async": "./dist/fs/async.js",
 		"./jwt": "./dist/jwt/index.js",
 		"./web": "./dist/web/index.js"
+	},
+	"typesVersions": {
+		"*": {
+			"createLogger": [
+				"./dist/createLogger/index.d.ts"
+			],
+			"crypto": [
+				"./dist/crypto/index.d.ts"
+			],
+			"fs/sync": [
+				"./dist/fs/sync.d.ts"
+			],
+			"fs/async": [
+				"./dist/fs/async.d.ts"
+			],
+			"jwt": [
+				"./dist/jwt/index.d.ts"
+			],
+			"web": [
+				"./dist/web/index.d.ts"
+			]
+		}
 	},
 	"scripts": {
 		"prebuild": "rimraf dist tsconfig.tsbuildinfo",
