@@ -4,14 +4,16 @@
 	"description": "@oadpoaw/utils",
 	"version": "1.0.0",
 	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"exports": {
-		".": "./dist/lib/**.js",
+		".": "./dist/index.js",
 		"./createLogger": "./dist/createLogger.js",
 		"./crypto": "./dist/crypto/index.js",
-		"./fs/sync": "./dist/fs/sync.ts",
-		"./fs/async": "./dist/fs/async.ts",
+		"./fs/sync": "./dist/fs/sync.js",
+		"./fs/async": "./dist/fs/async.js",
 		"./jwt": "./dist/jwt/index.js",
-		"./web": "./dist/web/**/*.js"
+		"./web": "./dist/web/index.js"
 	},
 	"scripts": {
 		"prebuild": "rimraf dist tsconfig.tsbuildinfo",
