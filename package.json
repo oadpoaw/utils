@@ -18,8 +18,9 @@
 		"build": "tsc -b",
 		"lint": "prettier --check \"src/**/*.{ts,tsx}\"",
 		"format": "prettier --write \"src/**/*.{ts,tsx}\"",
-		"v:patch": "npm version patch -m \"chore(release): %s\"",
-		"v:minor": "npm version minor -m \"chore(release): %s\""
+		"v:patch": "npm version patch -m \"chore(release): %s\" --sign-git-tag",
+		"v:minor": "npm version minor -m \"chore(release): %s\" --sign-git-tag",
+		"v:major": "npm version major -m \"chore(release): %s\" --sign-git-tag"
 	},
 	"devDependencies": {
 		"@oadpoaw/ts-config": "^0.1.1",
