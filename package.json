@@ -17,9 +17,6 @@
 	},
 	"typesVersions": {
 		"*": {
-			".": [
-				"./dist/index.d.ts"
-			],
 			"createLogger": [
 				"./dist/createLogger/index.d.ts"
 			],
