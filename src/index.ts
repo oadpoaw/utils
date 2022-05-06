@@ -1,6 +1,5 @@
 export * from './lib/ArrayChunk.js';
 export * from './lib/ArrayShuffle.js';
-export * from './lib/Base64.js';
 export * from './lib/differentiate.js';
 export * from './lib/Escapes.js';
 export * from './lib/getIP.js';

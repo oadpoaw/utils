@@ -18,16 +18,16 @@ function Log(type: string, message: any[]) {
 	switch (type) {
 		case 'warn':
 		case 'error':
-			console[type](...parseOptions(type, message));
+			console[type](...parseOptions(type.toUpperCase(), message));
 			break;
 		default:
-			console.log(...parseOptions(type, message));
+			console.log(...parseOptions(type.toUpperCase(), message));
 			break;
 	}
 }
 
 export const Logger = {
-	info: (...message: any[]) => Log('INFO', message),
+	info: (...message: any[]) => Log('info', message),
 	warn: (...message: any[]) => Log('warn', message),
 	error: (...message: any[]) => Log('error', message),
 	log: (type: string, ...message: any[]) => Log(type, message),
