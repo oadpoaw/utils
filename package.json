@@ -7,12 +7,12 @@
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"exports": {
-		".": "./dist/index.js",
 		"./createLogger": "./dist/createLogger/index.js",
 		"./crypto": "./dist/crypto/index.js",
 		"./fs/sync": "./dist/fs/sync.js",
 		"./fs/async": "./dist/fs/async.js",
 		"./jwt": "./dist/jwt/index.js",
+		"./observer": "./dist/observer/index.js",
 		"./web": "./dist/web/index.js"
 	},
 	"typesVersions": {
@@ -31,6 +31,9 @@
 			],
 			"jwt": [
 				"./dist/jwt/index.d.ts"
+			],
+			"observer": [
+				"./dist/observer/index.d.ts"
 			],
 			"web": [
 				"./dist/web/index.d.ts"
